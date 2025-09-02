@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore/lite";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD7ntpNom6QvDy0cPkrRsUt7Yd4xKF3RS8",
@@ -12,3 +13,4 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app)
